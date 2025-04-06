@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoeCode | B.Tech CSE | AI Hustler</title>
+    <style>
+        :root {
+            --primary: #6e48aa;
+            --secondary: #9d50bb;
+            --dark: #1e1e2c;
+            --light: #f5f5f7;
+            --accent: #ff9a56;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://source.unsplash.com/random/1600x900/?coding,hacker');
+            background-size: cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--dark);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        .skill-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .projects {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-image"></div>
+        <div class="container">
+            <h1>Joe The CSE</h1>
+            <p class="tagline">Debugging Life with AI & Calisthenics</p>
+            <p>B.Tech CSE | AI Hustler | One-Arm Pushup Enthusiast | Dog's Best Friend</p>
+            <a href="#projects" class="btn">See My Projects</a>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>2nd year CSE student in Punjab, surviving on chai, AI-generated code, and the occasional gym PR. I turn bus rides into coding sessions and UFC breaks into "research".</p>
+            <p>When I'm not wrestling with segmentation faults, you'll find me doing archer pull-ups or walking my Desi dog who doubles as my rubber duck debugger.</p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div style="width: 85%; height: 10px; background-color: var(--accent); border-radius: 5px;"></div>
+                        <p>85% (AI-assisted)</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div style="width: 50%; height: 10px; background-color: var(--accent); border-radius: 5px;"></div>
+                        <p>50% ("Why is public static void main so long?")</p>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>AI Tools</h3>
+                    <ul>
+                        <li>ChatGPT</li>
+                        <li>Claude</li>
+                        <li>Gemini</li>
+                        <li>Replit AI</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Fitness</h3>
+                    <ul>
+                        <li>Archer pull-ups</li>
+                        <li>5-min plank</li>
+                        <li>One-arm pushups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Bus-Tracker App</h3>
+                    <p>For seniors who won't stop asking "Where's the bus?"</p>
+                    <p><strong>Tools:</strong> Google Maps API + ChatGPT-generated code</p>
+                </div>
+                <div class="project-card">
+                    <h3>AI Meme Generator</h3>
+                    <p>Because life needs more "Segmentation Fault" memes</p>
+                    <p><strong>Tools:</strong> DALL-E 2 + Python</p>
+                </div>
+                <div class="project-card">
+                    <h3>Dog Walk Optimizer</h3>
+                    <p>Maximizing squirrel encounters since 2025</p>
+                    <p><strong>Tools:</strong> GPS data + NotebookLM analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="blog">
+        <div class="container">
+            <h2>Recent Thoughts</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>How I Debug Life with Calisthenics</h3>
+                    <p>Muscle-ups as breakpoints, planks as stack traces</p>
+                </div>
+                <div class="project-card">
+                    <h3>Why My Dog is Better at UX Than My Professor</h3>
+                    <p>Tail wags = better feedback than most code reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <h3>Let's Connect</h3>
+            <p>Email: JoeWritesCode@protonmail.com</p>
+            <p>© 2025 Joe The CSE. All rights reserved. Powered by chai and AI hallucinations.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple animation for skills bars
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillBars = document.querySelectorAll('.skill-bar div');
+            
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
